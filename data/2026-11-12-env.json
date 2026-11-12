@@ -1,0 +1,50 @@
+{
+ "captured_utc": "2026-11-12T21:36:00Z",
+ "capture": "live probe by Nimbus (curl GET /v1/models + nvidia-smi), not estimated",
+ "endpoint": "http://127.0.0.1:8080/v1",
+ "model": {
+  "id": "qwen3.8-flash-next-iq2_xs",
+  "status": "loaded",
+  "n_ctx": 65536,
+  "modalities": {
+   "input": [
+    "text",
+    "image"
+   ],
+   "output": [
+    "text"
+   ]
+  }
+ },
+ "gpus": [
+  {
+   "cuda_index_this_deployment": 0,
+   "name": "NVIDIA GeForce RTX 3080 Ti",
+   "role": "helper",
+   "memory_used_mib": 10603
+  },
+  {
+   "cuda_index_this_deployment": 1,
+   "name": "NVIDIA GeForce RTX 3090",
+   "role": "main",
+   "memory_used_mib": 23272
+  }
+ ],
+ "cuda_smi_note": "CUDA index order here is flipped vs nvidia-smi listing; see BENCHMARK_PROTOCOL rule 1",
+ "host": {
+  "os": "Windows 11",
+  "shell": "git-bash/MSYS"
+ },
+ "fork": {
+  "repo": "FluxNimbusAi/Strata",
+  "head": "13eedf55",
+  "head_message": "serve: the #4677 stop bound on every backend, not only HIP",
+  "head_date": "2026-11-12T06:18:38Z",
+  "branches": [
+   "main",
+   "rc/0.1.30",
+   "ci/checks-green"
+  ],
+  "parent": "Niko1221/Strata"
+ }
+}
