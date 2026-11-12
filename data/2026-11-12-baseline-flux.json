@@ -1,0 +1,52 @@
+{
+ "ts": "2026-11-12T21:55:00Z",
+ "env": {
+  "model": "qwen3.8-flash-next-iq2_xs",
+  "n_ctx": 65536,
+  "endpoint": "127.0.0.1:8080",
+  "fork_commit": "13eedf55",
+  "gpus": "RTX 3090 main + 3080 Ti helper",
+  "os": "Windows 11 26300"
+ },
+ "runs": [
+  {
+   "prompt_tokens": 63,
+   "cached_tokens": 0,
+   "completion_tokens": 132,
+   "finish_reason": "stop",
+   "content_null": false,
+   "reasoning_present": true,
+   "prompt_ms": 573.5,
+   "predicted_ms": 1818.8,
+   "toks_per_s_decode": 72.57,
+   "toks_per_s_prefill": 109.9,
+   "wall_s": 2.41
+  },
+  {
+   "prompt_tokens": 63,
+   "cached_tokens": 58,
+   "completion_tokens": 126,
+   "finish_reason": "stop",
+   "content_null": false,
+   "reasoning_present": true,
+   "prompt_ms": 92.3,
+   "predicted_ms": 1592.8,
+   "toks_per_s_decode": 79.11,
+   "toks_per_s_prefill": 54.2,
+   "wall_s": 1.69
+  },
+  {
+   "prompt_tokens": 70,
+   "cached_tokens": 0,
+   "completion_tokens": 158,
+   "finish_reason": "stop",
+   "content_null": false,
+   "reasoning_present": true,
+   "prompt_ms": 551.3,
+   "predicted_ms": 1928.9,
+   "toks_per_s_decode": 81.91,
+   "toks_per_s_prefill": 127.0,
+   "wall_s": 2.48
+  }
+ ]
+}
