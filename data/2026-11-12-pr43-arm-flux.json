@@ -1,0 +1,43 @@
+{
+ "ts": "2026-11-12T21:55:22Z",
+ "pr": "43",
+ "arm_env_on_client_side_only": {
+  "STRATA_NO_IQ256": "1"
+ },
+ "caveat": "engine runs as a resident daemon on :8080; env set in this client process does NOT reach it. A/B requires an engine restart with the flag \u2014 pending, reported honestly.",
+ "runs_no_iq256_attempt": [
+  {
+   "prompt_tokens": 65,
+   "cached": 0,
+   "completion_tokens": 152,
+   "finish": "stop",
+   "prompt_ms": 521.9,
+   "predicted_ms": 1797.2,
+   "decode_tps": 84.57,
+   "prefill_tps": 124.5,
+   "wall_s": 2.34
+  },
+  {
+   "prompt_tokens": 65,
+   "cached": 60,
+   "completion_tokens": 152,
+   "finish": "stop",
+   "prompt_ms": 115.6,
+   "predicted_ms": 1854.5,
+   "decode_tps": 81.96,
+   "prefill_tps": 43.3,
+   "wall_s": 1.97
+  },
+  {
+   "prompt_tokens": 65,
+   "cached": 60,
+   "completion_tokens": 152,
+   "finish": "stop",
+   "prompt_ms": 99.4,
+   "predicted_ms": 1898.3,
+   "decode_tps": 80.07,
+   "prefill_tps": 50.3,
+   "wall_s": 2.0
+  }
+ ]
+}
