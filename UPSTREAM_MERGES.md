@@ -19,7 +19,7 @@ Snapshot pulled 2026-11-12 via `gh pr list --state merged`. Verdict column is fi
 | 82 | 2026-09-29 | mikicvi | Web app behind path-prefixed reverse proxies | N-A (loopback-only deployment) |
 | 81 | 2026-09-29 | mikicvi | Accept sm_80+ GPUs at runtime (matches build guard/README) | CONFIRMED — engine runs on sm_86 + sm_90 in production 24/7 |
 | 64 | 2026-09-28 | pipeob0 | parity tool: new-kernel mismatch must fail the run | TBD |
-| 44 | 2026-09-28 | pipeob0 | generate: probe real host→device bandwidth for pcie_frac | TBD — dual-GPU PCIe topology makes our probe data interesting upstream |
+| 44 | 2026-09-28 | pipeob0 | generate: probe real host→device bandwidth for pcie_frac | CONFIRMED 2026-11-13 (probe live: h2d 0.17 / peer 0.35 vs default 0.55; drift across OS update 5.6→6.2 GB/s); upstream comment filed |
 | 43 | 2026-09-28 | pipeob0 | kernels: AVX2 multi-token i-quant row kernels | TBD — i-quant path is exactly our IQ2_XS build |
 | 42 | 2026-09-28 | pipeob0 | pinned: MEM_LARGE_PAGES on Windows enable+round | FIELD-TESTED 2026-11-13: rounding OK, privilege-enable NOT effective (error 1314 on 30/31 boots, engine 0.1.55); comment filed upstream — see TESTLOG 2026-11-13 |
 
