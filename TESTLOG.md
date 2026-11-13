@@ -16,3 +16,8 @@ Verdict table claims (Windows + i-quant specials):
 - PR #44 (pcie_frac real bandwidth probe): needs dual-GPU transfer telemetry from engine logs; same gate as #42.
 
 Candidate issue logged: tool-call turns return content=null 10/10 with reasoning present (null-content repro, scratch workspace) — first candidate for upstream once the finish_reason=stop variant is reproduced on a larger sample.
+
+## 2026-11-13 — PR #42 field verdict: privilege-enable not effective (Nimbus, PC live capture)
+- Startup telemetry captured in `launch/strata-iq2xs.engine.log` across 31 engine boots (2026-11-02 → post-reboot 2026-11-13 16:34:56): arena request is page-rounded (35,456,548,864 B = 16,907 x 2,097,152) yet `VirtualAlloc(MEM_LARGE_PAGES)` returns **1314 PRIVILEGE_NOT_HELD** on 30/31 boots -> 4 KB fallback. Working-set-minimum + VirtualLock path (25,626 MiB) confirmed healthy.
+- Process-divisibility proxy formally retired (invalid by construction, per 11-12 attempt); startup line is the decisive read.
+- Verdict submitted as upstream comment: https://github.com/Niko1221/Strata/pull/42#issuecomment-6865861584 (FluxNimbusAi, 21:54Z). Follow-up queued: grant SeLockMemoryPrivilege to service account, re-capture boots, append result to the thread.

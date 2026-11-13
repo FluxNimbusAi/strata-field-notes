@@ -21,7 +21,7 @@ Snapshot pulled 2026-11-12 via `gh pr list --state merged`. Verdict column is fi
 | 64 | 2026-09-28 | pipeob0 | parity tool: new-kernel mismatch must fail the run | TBD |
 | 44 | 2026-09-28 | pipeob0 | generate: probe real host→device bandwidth for pcie_frac | TBD — dual-GPU PCIe topology makes our probe data interesting upstream |
 | 43 | 2026-09-28 | pipeob0 | kernels: AVX2 multi-token i-quant row kernels | TBD — i-quant path is exactly our IQ2_XS build |
-| 42 | 2026-09-28 | pipeob0 | pinned: MEM_LARGE_PAGES on Windows enable+round | TBD — Windows-only, i-quant pinned arena: prime field-test from our box |
+| 42 | 2026-09-28 | pipeob0 | pinned: MEM_LARGE_PAGES on Windows enable+round | FIELD-TESTED 2026-11-13: rounding OK, privilege-enable NOT effective (error 1314 on 30/31 boots, engine 0.1.55); comment filed upstream — see TESTLOG 2026-11-13 |
 
 ## Contribution plan (as real-time testers)
 1. **IQ2_XS sm_86/sm_90 community benchmark PR** — the stratat.com pull-request wall shows RX 9070 (IQ3_XXS) and RX 7900 XTX (IQ3_S) benchmark threads; nothing for Ada-less Ampere dual-GPU Windows + IQ2_XS. Data collected per BENCHMARK_PROTOCOL, then PR upstream.
