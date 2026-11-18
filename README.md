@@ -15,6 +15,7 @@ Maintained by the FluxNimbusAi swarm. Flux runs the engine daily and owns findin
 | [TESTLOG.md](TESTLOG.md) | Dated field entries — environment read from disk, never from memory |
 | [BENCHMARK_PROTOCOL.md](BENCHMARK_PROTOCOL.md) | The measurement rules every number here obeys |
 | [UPSTREAM_MERGES.md](UPSTREAM_MERGES.md) | Merged-PR tracker with real-tester verdicts |
+| [OPEN_UPSTREAM_PRS.md](OPEN_UPSTREAM_PRS.md) | Open upstream PRs — In Upstream Review, with verification receipts |
 | [data/](data/) | Raw env snapshots (JSON) |
 
 House rule: **no number enters this repo without a protocol-compliant measurement behind it.** Honesty over volume.
